@@ -21,9 +21,6 @@ a:focus-visible,summary:focus-visible{outline:3px solid #f28a70;outline-offset:3
 .brand-icon{display:grid;place-items:center;width:42px;height:42px;background:var(--accent);color:#fff;font-size:14px;border-radius:10px;font-weight:850}
 .brand-name{font-size:18px;display:block;font-weight:800;line-height:1.15}
 .brand-subtitle{display:block;font-size:12px;color:var(--muted);margin-top:3px}
-.portals{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-end;font-size:13px}
-.portals a{color:#5d6977;text-underline-offset:4px}
-.portals a:hover{color:var(--accent-dark)}
 .hero{background:linear-gradient(115deg,#17243a,#273d55)}
 .hero-inner{width:min(1140px,calc(100% - 40px));margin:auto;padding:33px 0}
 .hero-label{color:#ffb49f;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
@@ -54,8 +51,8 @@ a:focus-visible,summary:focus-visible{outline:3px solid #f28a70;outline-offset:3
 .legal-copy p.clause{margin-left:12px}
 .doc-end{margin-top:37px;padding-top:20px;border-top:1px solid #e9edf1;color:#7c8795;font-size:12px}
 footer{border-top:1px solid var(--line);text-align:center;color:#778396;font-size:12px;padding:25px 20px 30px}
-@media(max-width:800px){.layout{grid-template-columns:1fr}.sidebar{position:static}.hero-inner{padding:29px 0}.topbar-inner{min-height:70px}.portals{gap:8px;font-size:12px}}
-@media(max-width:490px){.topbar-inner,.hero-inner,.layout{width:min(100% - 28px,1140px)}.portals{flex-direction:column;align-items:flex-end;gap:4px}.brand-name{font-size:16px}.brand-icon{width:38px;height:38px}.layout{margin-top:17px}.legal-document{padding:23px 19px}.legal-copy p{font-size:14px}}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.sidebar{position:static}.hero-inner{padding:29px 0}.topbar-inner{min-height:70px}}
+@media(max-width:490px){.topbar-inner,.hero-inner,.layout{width:min(100% - 28px,1140px)}.brand-name{font-size:16px}.brand-icon{width:38px;height:38px}.layout{margin-top:17px}.legal-document{padding:23px 19px}.legal-copy p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -64,7 +61,6 @@ footer{border-top:1px solid var(--line);text-align:center;color:#778396;font-siz
 <header class="topbar">
 <div class="topbar-inner">
 <a class="brand" href="https://iou-corp.github.io/business-docs-c/"><span class="brand-icon" aria-hidden="true">IOU</span><span><span class="brand-name">IOU Corp</span><span class="brand-subtitle">Legal &amp; Policy Center</span></span></a>
-<nav class="portals" aria-label="Legal document portals"><a href="https://iou-corp.github.io/business-docs-c/">Business documents</a><a href="https://iou-corp.github.io/business-docs/">Standard business documents</a></nav>
 </div></header>
 <section class="hero" aria-label="Policy library"><div class="hero-inner"><div class="hero-label">Business document</div><h2>Legal documents &amp; policies</h2></div></section>
 <div class="layout">
